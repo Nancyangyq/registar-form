@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>報名表單</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="/form.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="container_form--title">
+    <h1 class="title">課程報名表單</h1>
+  </div>
+  <p class="p">*基本資料</p>
+  <div id="container_form" class="container_form">
+  <div id="form" class="form">
+    <div class="formBox">
+      <label for="" class="label">1.姓名</label>
+    </div>
+    <div class="inputBox">
+    <input id="name" type="text" class="input" placeholder="請填寫完整姓名">
+    </div>
+    <div class="inputBox_required">
+      <p class="form_required">這個欄位是必填的</p>
+    </div>   
+  </div>
+  <div id="form" class="form">
+    <div class="formBox">
+      <label for="" class="label">2.性別</label>
+    </div>
+    <div class="inputBox inputBox-select">
+    <select name="gender" id="gender" class="input input-type-select">
+      <option value="請選擇你的性別" selected disabled>請選擇你的性別</option>
+      <option value="男">男</option>
+      <option value="女">女</option> 
+    </select>
+    </div>
+    <div class="inputBox_required">
+      <p class="form_required">這個欄位是必填的</p>
+    </div>   
+  </div>
+  <div id="form" class="form">
+    <div class="formBox">
+      <label for="" class="label">3.電話</label>
+    </div>
+    <div class="inputBox">
+    <input id="phone" type="phone" class="input" placeholder="請填寫手機號碼">
+    </div>
+    <div class="inputBox_required">
+      <p class="form_required">這個欄位是必填的</p>
+    </div>
+    
+  </div>
+  <div id="form" class="form">
+    <div class="formBox">
+      <label for="" class="label">4.信箱</label>
+    </div>
+    <div class="inputBox">
+    <input id="email" type="email" class="input" placeholder="請填寫電子信箱">
+    </div>
+    <div class="inputBox_required">
+      <p class="form_required">這個欄位是必填的</p>
+    </div>
+  </div>
+  <div id="form" class="form">
+        <div class="formBox">
+      <label for="" class="label">5.程度</label>
+    </div>
+      <div class="inputBox inputBox-select">
+    <select name="level" id="level" class="input input-type-select">
+    <option value="請選擇你的程度" selected disabled>請選擇你的程度</option>
+      <option value="網頁開發小白(完全沒經驗)">網頁開發小白(完全沒經驗)</option>
+      <option value="網頁開發新手(剛入門)">網頁開發新手(剛入門)</option>
+      <option value="網頁開發老手(有相關經驗一年以上)">網頁開發老手(有相關經驗一年以上)</option> 
+    </select>
+    </div>
+    <div class="inputBox_required">
+      <p class="form_required">這個欄位是必填的</p>
+    </div>
+  </div>
+  <div id="form" class="form">
+        <div class="formBox">
+      <label for="" class="label">6.職業</label>
+    </div>
+      <div id="form" class="inputBox inputBox-select">
+    <select name="job" id="job" class="input input-type-select">
+    <option value="請選擇你的職業" selected disabled>請選擇你的職業</option>
+      <option value="網頁相關工作者(UXUI、前端、後端、網頁行銷...等)">網頁相關工作者(UXUI、前端、後端、網頁行銷...等)</option>
+      <option value="軟體工程師">軟體工程師</option>
+      <option value="視覺設計相關">視覺設計相關</option>
+      <option value="行銷企劃">行銷企劃</option>
+      <option value="PM">PM</option>
+      <option value="其他(可自填)">其他(可自填)</option>
+    </select>
+    </div>
+    <div class="inputBox_required">
+      <p class="form_required">這個欄位是必填的</p>
+    </div>
+  </div>
+  <div id="form" class="form">
+    <div class="formBox">
+      <label for="" class="label">7.原因</label>
+    </div>
+      <div class="inputBox inputBox-select">
+        <select name="reason" id="reason" class="input input-type-select">
+          <option value="請選擇你的原因" selected disabled>請選擇你的原因</option>
+          <option value="現職工作需要">現職工作需要</option>
+          <option value="個人興趣">個人興趣</option>
+          <option value="未來想轉職">未來想轉職</option> 
+          <option value="增加其他專長">增加其他專長</option> 
+        </select>
+        </div>
+    <div class="inputBox_required">
+      <p class="form_required">這個欄位是必填的</p>
+    </div>   
+  </div>
+  </div>
+  <p class="p">*課程內容(可報名一種以上)</p>
+  <div id="lesson" class="container_form--lesson">
+    <div class="form-lesson">
+      HTML&CSS<br>基礎切版<br>(單堂4小時)
+    </div>
+    <div class="form-time">
+      <ul>
+        <li class="time">7/03 10:00-15:00(中午休1小時)</li>
+        <li class="time">7/04 13:00-17:00</li>
+        <li class="time">7/10  10:00-15:00(中午休1小時)</li>
+        <li class="time">7/11  13:00-17:00</li>
+      </ul>
+    </div>
+  </div>
+  <div id="lesson" class="container_form--lesson">
+    <div class="form-lesson">
+    Wordpress<br>客製化開發<br>(系列課程四週)<br>(單堂4小時、共16小時)
+    </div>
+    <div class="form-time">
+      <ul>
+        <li class="time">7/10 10:00-15:00(中午休1小時)</li>
+        <li class="time">7/17 10:00-15:00(中午休1小時)</li>
+        <li class="time">7/24 10:00-15:00(中午休1小時)</li>
+        <li class="time">7/31 10:00-15:00(中午休1小時)</li>
+      </ul>
+    </div>
+  </div>
+  <div id="lesson" class="container_form--lesson">
+    <div class="form-lesson lesson3">
+    網頁開發流程<br>(單堂6小時)
+    </div>
+    <div class="form-time">
+      <ul>
+        <li class="time">7/10 10:00-15:00(中午休1小時)</li>
+        <li class="time">7/17 10:00-15:00(中午休1小時)</li>
+        <li class="time">7/24 10:00-15:00(中午休1小時)</li>
+        <li class="time">7/31 10:00-15:00(中午休1小時)</li>
+      </ul>
+    </div>
+    </div>
+  <div class="container_form--btn">
+    <button id="submitBtn" class="btn btn-center" type="submit" name="submit">確認送出</button>
+  </div>
+  </div>
+</div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js'></script>
+<script  src="/form.js"></script>
+
+</body>
+</html>
